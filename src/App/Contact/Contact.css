@@ -1,0 +1,12 @@
+/* CONTACT - CSS */
+/* ============================== */
+
+.contact > a {
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.contact > a:hover {
+    color: whitesmoke;
+}

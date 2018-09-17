@@ -1,0 +1,29 @@
+/* HOME -- CSS */
+/* ============================== */
+
+main {
+    background-color: #b9d5f3;
+    flex: 1;
+    font-weight: 400;
+    min-height: 80vw;
+    padding: 20px;
+    
+}
+
+main > p {
+    max-width: 100%;
+}
+
+.project-image {
+    width: 300px;
+    margin: 10px;
+}
+
+.home {
+    padding: 20px;
+}
+
+#marquee-salad-image-1 {
+    width: 500px;
+}
+
