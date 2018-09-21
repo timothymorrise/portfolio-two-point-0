@@ -17,7 +17,7 @@ function Projects() {
     return (
         <main>
             <h1>Boy Counter Experience</h1>
-            <p>An app that uses the Youtube API to watch the webseries "Monster Hunter" to show the videos
+            <p>An app that uses the Youtube API to watch the webseries "Monster Factory" to show the videos
             to track the number of times the hosts say "boy" (a common idiom of the McElroys). Created using 
             React and Redux.  
             </p>

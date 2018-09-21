@@ -1,0 +1,89 @@
+ /* HEADER -- CSS */
+ /* ============================== */
+
+ header {
+     height: 100%;
+     width: 100%;
+ }
+
+ .header-background {
+     height: 47.16vw;
+     position: fixed;
+     width: 100vw;
+     z-index: -1;
+ }
+
+ .header-background-part {
+     background: url("../../images/header-background.jpg");
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 50%;
+     width: 100%;
+
+ }
+
+ .header-titles {
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 47.16vw;
+     width: 100vw;
+ }
+
+ .header-titles>h1 {
+     color: #ff0073;
+     border-top: 2px solid #ff0073;
+     border-bottom: 2px solid #ff0073;
+     font-family: 'Righteous', cursive;
+     font-size: 2em;
+     text-shadow: 1px 1px white;
+ }
+
+ .header-titles>h2 {
+     color: #ff0073;
+     font-family: 'Oswald', sans-serif;
+     font-size: 1em;
+     margin-top: 5px;
+     text-shadow: 1px 1px white;
+ }
+
+ @media (min-width: 500px) {
+     .header-titles>h1 {
+         font-size: 2.3em;
+     }
+
+     .header-titles>h2 {
+         font-size: 1.5em;
+     }
+ }
+
+ @media (min-width: 620px) {
+     .header-titles>h1 {
+         font-size: 2.8em;
+         text-shadow: 2px 2px white; 
+     }
+     .header-titles>h2 {
+         font-size: 1.8em;
+         text-shadow: 2px 2px white; 
+     }
+ }
+
+ @media (min-width: 700px) {
+    .header-titles>h1 {
+        font-size: 3.5em;
+    }
+    .header-titles>h2 {
+        font-size: 2em;
+    }
+
+ }
+
+ @media (min-width: 950px) {
+     .header-titles > h1 {
+         font-size: 5em;
+     }
+     .header-titles > h2 {
+        font-size: 3em;
+     }
+ }

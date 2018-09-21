@@ -9,7 +9,7 @@ import "./About.css"
 
 function AboutMe() {
     return (
-        <main>
+        <section id="about-me">
             <h1>About Me</h1>
             <img class="profile-picture" src={require(`../../images/profile-pic.JPG`)}/>
             <br />
@@ -35,7 +35,7 @@ function AboutMe() {
                 </p> 
             {/* Between my fullstack and my personal a year experience */}
             {/* When I'm coding I like to  */}
-        </main>
+        </section>
     )
 }
 
