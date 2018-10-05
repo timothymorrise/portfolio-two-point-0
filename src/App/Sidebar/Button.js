@@ -5,40 +5,52 @@ import React, { Component } from 'react'
 
 // VARIABLES
 
-const shrunkButtonStyle = {
-    border: "0px solid #ff0073",
-    height: "0px",
-    width: "0px",
-}
-
 export default class Button extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            buttonShrunk: false,
-            buttonStyle: {}
+            isButtonShrunk: false
         }
         this.handleMouseEnter = this.handleMouseEnter.bind(this)
+        this.menuChange = this.menuChange.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
 
+    menuChange() {
+        const { isMenuActive,
+            isToggleTimedOut,
+            toggleMenu } = this.props
+        if (!isMenuActive && !isToggleTimedOut) {
+            toggleMenu()
+        }
+    }
 
     handleMouseEnter() {
-        this.props.toggleMenu()
+        this.menuChange()
+    }
+
+    handleClick() {
+        this.menuChange()
     }
 
     render() {
         let visibility = "show";
-        if (this.props.menuActive) {
+        if (this.props.isMenuActive) {
             visibility = "hide";
         }
         return (
-            <div id="sidebar-button-container">
-                <div 
+            <div>
+                <div id="sidebar-trigger-zone" 
+                    onMouseEnter={this.handleMouseEnter}>
+                    </div>
+                <div id="sidebar-button-container">
+                    <div
                         id="sidebar-button"
                         className={visibility}
-                        style={this.state.buttonStyle}
                         onMouseEnter={this.handleMouseEnter}
-                ></div>
+                        onClick={this.handleClick} >
+                    </div>
+                </div>
             </div>
         )
     }

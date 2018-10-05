@@ -6,6 +6,7 @@ import React, { Component } from 'react'
 
 // IMPORT FROM FILES
 import "./Menu.css";
+import MenuLinks from "./MenuLinks"
 
 let counter = 0
 
@@ -22,28 +23,25 @@ export default class Menu extends Component {
     }
 
     handleMouseLeave() {
-        if (this.props.menuActive) {
+        if (this.props.isMenuActive) {
             this.props.toggleMenu()
         }
     }
 
     render() {
         let visibility = "hide";
-        if (this.props.menuActive) {
+        if (this.props.isMenuActive) {
             visibility = "show";
         }
 
-        console.log("visibility:", this.props.menuActive, visibility);
+        console.log("visibility:", this.props.isMenuActive, visibility);
         return (
-            <div id="flyoutMenu"
+            <div id="menu-container"
                 className={visibility}
                 onMouseDown={this.handleMouseDown}
                 onMouseLeave={this.handleMouseLeave}
             >
-                <h2><a href="#">Home</a></h2>
-                <h2><a href="#">About</a></h2>
-                <h2><a href="#">Contact</a></h2>
-                <h2><a href="#">Search</a></h2>
+               <MenuLinks /> 
             </div>
         );
     }

@@ -1,25 +1,34 @@
 // HEADER -- COMPONENT
+// ==============================
 
 // IMPORT FROM PACKAGES
-import React from 'react'
+import React, { Component } from 'react'
 
-// IMPORT FROM FILES
-import "./Header.css";
+// IMPORT FROM FILES - COMPONENTS, CSS
+import HeaderGuts from "./HeaderGuts"
+import "./Header.css"
 
-// FUCTION
-function Header() {
-    return (
-        <header>
-            <div className="header-background">
-                <div className="header-background-part"></div>
-                <div className="header-background-part"></div>
-            </div>
-            <div className="header-titles">
-                <h1>Timothy Morrise</h1>
-                <h2>Full Stack Web Developer</h2>
-            </div>
-        </header>
-    )
+class Header extends Component {
+    constructor(props) {
+        super(props)
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick() {
+        this.props.toggleMenu()
+    }
+
+
+    render() {
+        return (
+            <header>
+                <HeaderGuts 
+                isMenuActive={this.props.isMenuActive}
+                handleClick={this.handleClick} />
+            </header>
+        )
+    }
 }
+
 
 export default Header
