@@ -9,6 +9,7 @@ import Sidebar from "./Sidebar"
 import Header from "./Header";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
+import Skills from "./Skills";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import "./App.css"
@@ -56,6 +57,7 @@ class App extends Component {
                         toggleMenu={this.toggleMenu}/>
                 <main>
                     <Projects />
+                    <Skills />
                     <Resume />
                     <AboutMe />
                     <Contact />

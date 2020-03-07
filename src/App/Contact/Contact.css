@@ -1,12 +1,17 @@
 /* CONTACT - CSS */
 /* ============================== */
 
-.contact > a {
-    color: black;
+#contact {
+    background-color: #72587a;
+    color: whitesmoke;
+}
+
+#contact-guts > a {
+    color: whitesmoke;
     font-weight: 400;
     text-decoration: none;
 }
 
-.contact > a:hover {
-    color: whitesmoke;
+#contact-guts > a:hover {
+    color: #fa87bb;
 }

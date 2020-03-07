@@ -7,19 +7,83 @@ main {
     font-weight: 400;
 }
 
-.project-image {
+section {
+    padding: 10px;
+    padding-bottom: 55px;
+}
+
+#projects {
+    background-color: #72587a;
+    
+    color: white;
+}
+
+#project-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    align-items: center;
+    background-color: #97829e;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+    width: 350px;
+}
+
+.project-card>h1{
+    font-size: 1.6em;
+}
+
+.project-card>a {
+    color: white;
+    text-decoration: none;
+}
+
+.project-card>a:hover {
+    color: #fa87bb
+}
+
+.project-card>p {
     width: 300px;
     margin: 10px;
 }
 
-#marquee-salad-image-1 {
-    width: 500px;
+.project-image {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
 }
+
+.project-image:hover {
+    filter: blur(.2px);
+    transition: .3s;
+    transform: translateY(-7px);
+    box-shadow: 0 4px 8px 0 #72587a ;
+}
+
+/* #screaming-title {
+    font-size: 1.8em;;
+} */
 
 .section-guts-container {
     margin-left: 74px;
     margin-right: 74px;
 }
 
+.section-title {
+    font-family: 'Righteous', cursive;
+    font-size: 4em;
+}
 
 
+@media (min-width: 700px) {
+    section{ 
+        padding: 70px;
+    }
+}

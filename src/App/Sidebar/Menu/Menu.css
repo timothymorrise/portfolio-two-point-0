@@ -2,10 +2,14 @@
 /* ============================== */
 
 #menu-container {
+
     background-color: #ff0073;
     border-right: 5px double white;
+    display: flex;
+    flex-direction: column;
     font-family: 'Oswald', sans-serif;
     height: 100vh;
+    justify-content: center;
     padding-right: 10px;
     position: fixed;
     top: 0;
@@ -28,8 +32,16 @@
     cubic-bezier(0, .52, 0, 1) .3s;
   }
    
+  #menu-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22vw;
+  }
+
   #menu-links h2 a {
     color: #333;
+    font-family: 'Righteous', cursive;
     margin-left: 15px;
     text-decoration: none;
   }

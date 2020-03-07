@@ -1,0 +1,10 @@
+/* SKILLS -- CSS */
+/* ============================== */
+
+#skills {
+    background-color: #8ec5d6
+}
+
+#skills-logos-container>img {
+ height: 300px
+}

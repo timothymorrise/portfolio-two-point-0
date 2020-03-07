@@ -1,10 +1,12 @@
 /* RESUME -- CSS */
 /* ============================== */
 
-.resume {
+#resume {
+    background-color: #72587a;
+    ;
+    color: white;
     display: flex;
     flex-direction: column;
-    padding: 20px;
 }
 
 .resume-image {

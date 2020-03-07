@@ -11,7 +11,7 @@ function AboutMe() {
     return (
         <section id="about-me">
             <div className="section-guts-container">
-                <h1>About Me</h1>
+                <h1 className="section-title">About Me</h1>
                 <img class="profile-picture" src={require(`../../images/profile-pic.JPG`)} />
                 <br />
                 <br />
