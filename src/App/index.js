@@ -23,7 +23,30 @@ class App extends Component {
         }
         this.toggleMenu = this.toggleMenu.bind(this);
         this.timeOutToggle = this.timeOutToggle.bind(this);
+        this.listenToScroll = this.listenToScroll.bind(this);
     }
+    
+    componentDidMount() {
+        window.addEventListener('scroll', this.listenToScroll)
+      }
+      
+      componentWillUnmount() {
+        window.removeEventListener('scroll', this.listenToScroll)
+      }
+      
+      listenToScroll () {
+        const winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop
+      
+        const height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight
+      
+        const scrolled = winScroll / height
+        this.setState({
+            thePosition: scrolled,
+        })
+      }
 
     timeOutToggle() {
         this.setState({ isToggleTimedOut: true})
@@ -52,7 +75,8 @@ class App extends Component {
             <div className="page-wrapper">
                 <Sidebar isMenuActive={this.state.isMenuActive}
                         toggleMenu={this.toggleMenu} 
-                        isToggleTimedOut={this.state.isToggleTimedOut}/>
+                        isToggleTimedOut={this.state.isToggleTimedOut}
+                        position={this.state.thePosition}/>
                 <Header isMenuActive={this.state.isMenuActive}
                         toggleMenu={this.toggleMenu}/>
                 <main>

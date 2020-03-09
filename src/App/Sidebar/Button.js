@@ -35,8 +35,12 @@ export default class Button extends Component {
 
     render() {
         let visibility = "show";
-        if (this.props.isMenuActive) {
+        let menuText= "MENU"
+        let position = this.props.position
+        console.log(position)
+        if (this.props.isMenuActive || position<.11) {
             visibility = "hide";
+            menuText = ""
         }
         return (
             <div>
@@ -49,6 +53,8 @@ export default class Button extends Component {
                         className={visibility}
                         onMouseEnter={this.handleMouseEnter}
                         onClick={this.handleClick} >
+                        <p>{menuText}</p>
+                        
                     </div>
                 </div>
             </div>

@@ -14,23 +14,34 @@ const html5Logo = require("../../images/skills-logos/html5.png")
 const nodejsLogo = require("../../images/skills-logos/nodejs.png")
 const pythonLogo = require("../../images/skills-logos/python.png")
 const reactLogo = require("../../images/skills-logos/react.png")
+const mongoLogo = require("../../images/skills-logos/mongo.png")
 
 function Skills() {
     return (
         <section id="skills">
             <div className="section-guts-container">
                 <h1 className="section-title">Skills</h1>
+                <h2>Coding Skills</h2>
                 <div id="skills-logos-container">
-                    <img src={css3Logo} alt=""/>
-                    <img src={es6Logo} alt=""/>
-                    <img src={html5Logo} alt=""/>
-                    <img src={reactLogo} alt=""/>
-                    <img src={expressLogo} alt=""/>
-                    <img src={gitLogo} alt=""/>
-                 
-                    <img src={nodejsLogo} alt=""/>
-                    <img src={pythonLogo} alt=""/>
-                    
+                    <img src={css3Logo} alt="" />
+                    <img src={es6Logo} alt="" />
+                    <img src={html5Logo} alt="" />
+                    <img src={reactLogo} alt="" />
+                    <img src={expressLogo} alt="" />
+                    <img src={gitLogo} alt="" />
+
+                    <img src={nodejsLogo} alt="" />
+                    <img src={mongoLogo} alt="" />
+                    <img src={pythonLogo} id="python-logo" alt="" />
+                </div>
+                <h2>Misc. Skills</h2>
+                <div id="other-skills-container">
+                    <span>Audio Visual Technician</span>
+                    <span>Spreadsheet Modeling and Programming</span>
+                    <span>Leadership</span>
+                    <span>Management</span>
+                    <span>Powerpoint and Keynote</span>
+                    <span>Microsfot Suite</span>
                 </div>
             </div>
         </section>

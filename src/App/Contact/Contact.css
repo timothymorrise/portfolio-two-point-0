@@ -6,10 +6,18 @@
     color: whitesmoke;
 }
 
+
+
 #contact-guts > a {
     color: whitesmoke;
     font-weight: 400;
     text-decoration: none;
+}
+
+#contact-guts>h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.6em;
+    margin: 0px;
 }
 
 #contact-guts > a:hover {

@@ -2,9 +2,29 @@
 /* ============================== */
 
 #skills {
-    background-color: #8ec5d6
+    background-color: #9fcfdf
+}
+
+#skills-logos-container {
+    margin: 50px;
+    margin-left: 65px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
 #skills-logos-container>img {
- height: 300px
+    margin: 24px;
+    max-height: 200px;
+    max-width: 200px;
+    object-fit: scale-down;
+}
+
+#python-logo {
+    height: 140px;
+    transform: translate(0px, 40px)
+    
 }

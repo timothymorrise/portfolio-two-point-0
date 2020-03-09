@@ -23,7 +23,8 @@ class Sidebar extends Component {
                 <Button 
                     isMenuActive={this.props.isMenuActive}
                     isToggleTimedOut = {this.props.isToggleTimedOut}
-                    toggleMenu={this.props.toggleMenu} />
+                    toggleMenu={this.props.toggleMenu} 
+                    position={this.props.position}/>
                 <Menu 
                     isMenuActive={this.props.isMenuActive} 
                     toggleMenu={this.props.toggleMenu} />

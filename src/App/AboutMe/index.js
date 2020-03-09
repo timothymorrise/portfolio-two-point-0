@@ -12,7 +12,7 @@ function AboutMe() {
         <section id="about-me">
             <div className="section-guts-container">
                 <h1 className="section-title">About Me</h1>
-                <img class="profile-picture" src={require(`../../images/profile-pic.JPG`)} />
+                <img class="profile-picture" src={require(`../../images/profile-pic.jpg`)} />
                 <br />
                 <br />
                 <h2>

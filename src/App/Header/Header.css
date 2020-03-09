@@ -57,7 +57,7 @@
 }
 
  .header-titles>h1 {
-     color: #ff0073;
+     color: #db4186;
      border-top: 2px solid #ff0073;
      border-bottom: 2px solid #ff0073;
      font-family: 'Righteous', cursive;
@@ -66,7 +66,7 @@
  }
 
  .header-titles>h2 {
-     color: #ff0073;
+     color: #db4186;
      font-family: 'Oswald', sans-serif;
      font-size: 1em;
      margin-top: 5px;
@@ -89,14 +89,14 @@
 
 #header-menu-button:hover {
     background-color: #fa87bb;
-    border: 10px solid #ff0073;
+    border: 10px solid #db4186;
     color: black;
     text-shadow: 1px 1px white;
     cursor: pointer;
 }
 
 #header-menu-button.unclicked {
-    border: 10px solid #ff0073;
+    border: 10px solid #db4186;
     height: 50px;
     width: 50px;
     transform: translate3d(0vw, 0, 0);
@@ -104,7 +104,7 @@
 }
 
 #header-menu-button.clicked {
-    border: 0px solid #ff0073;
+    border: 0px solid #db4186;
     height: 0px;
     width: 0px;
     transform: translate3d(-50vw, 0, 0);
@@ -156,7 +156,7 @@
         font-size: 1.2em;
     }
      #header-menu-button.unclicked {
-        border: 13px solid #ff0073;
+        border: 13px solid #db4186;
         height: 100px;
         width: 100px;
     }
@@ -182,7 +182,7 @@
         width: 125px;
     }
     #header-menu-button.unclicked {
-        border: 16px solid #ff0073;
+        border: 16px solid #db4186;
         height: 125px;
         width: 125px;
     }
@@ -203,7 +203,7 @@
         width: 160px;
     }
      #header-menu-button.unclicked {
-        border: 20px solid #ff0073;
+        border: 20px solid #db4186;
         height: 140px;
         width: 140px;
     }
