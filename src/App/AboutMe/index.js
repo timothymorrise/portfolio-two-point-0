@@ -12,30 +12,29 @@ function AboutMe() {
         <section id="about-me">
             <div className="section-guts-container">
                 <h1 className="section-title">About Me</h1>
-                <img class="profile-picture" src={require(`../../images/profile-pic.jpg`)} />
-                <br />
-                <br />
-                <h2>
-                    I blame Shnorlack the Great.</h2>
-                <br />
-                <p>
-                    My first forays into programming was helping my friend create a responsive
-                    spreadsheet for her D&D Character, Shnorlack the Gnome Paladin. After many a succesful jaunt
-                    with Shnorlack, I began to be intrigued by the excitement I experience of building her algorithms.
-                    What more could I do? What else could I learn tinkering with code?
-            </p>
-                <br />
-                <p>
-                    And so I took a byte. I picked up Javascript and Node.js. I found myself hooked. I love that feeling of
-                    working on a program when I find a bug and I'm forced to try eight new things until I realize
-                    in an instant that ninth thing that makes everything fall into place.
-            </p>
-                <br />
-                <p> I wanted to expand my skills, so I attended V School's Full Stack Web Development Program. I'm currently
-                    building projects with Javascript, Node.js, React/Redux and looking to learn even more. [WHAT TO ADD/CHANGE, MARY?]
-                </p>
-                {/* Between my fullstack and my personal a year experience */}
-                {/* When I'm coding I like to  */}
+                <h2>"Take a <span id="byte">byte<a id="shh-a-secret" href="https://youtu.be/jdH2Sy-BlNE?t=742" target="blank" >
+                    .</a>
+                </span> Help yourself."
+                    <span id="janelle"> &mdash; Janelle Monae</span></h2>
+                <div id="about-container">
+
+                    <img class="profile-picture" src={require(`../../images/profile-pic.jpg`)} />
+                    <br />
+                    <br />
+                    <p>
+                        In coding and in life my philosphy is to "take a byte:" that if I'm intrigued by something to get in there and give it a gnaw.
+                    </p>
+                    <br />
+                    <p> That's how I started coding. It began as me applying what I learned in Spreadsheet Modelling from my Economics studies; I had a go at building a responsive spreadsheet for my friend's D&D character, Shnorlack The Great. It soon escalated to me learning about web development and jumping into my first Javascript tutorial.</p>
+                    <br />
+                    <p>
+                        I since have graduated from V School's Full Stack Development course to expand on my love for coding, and looking for the next savory piece of grissel I can chew on.
+                    </p>
+                    <br />
+                    <p>
+                        When I'm not coding I'm usually crying through a French movie or vogueing my way across a dancefloor. Life's ambitions include creating a responsive LED gown and teaching a robot how to love. Will settle for an alien or a canadian actor on the latter.
+                    </p>
+                </div>
             </div>
         </section>
     )

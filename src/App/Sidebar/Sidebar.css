@@ -40,7 +40,8 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 10px solid #db4186;
+    border: 10px solid #ee579b;
+    margin-left: 10px;
     outline: none;
     overflow: show;
     transition: width .1s linear 0s, height .1s linear 0s, border .1s linear .175s;
@@ -56,4 +57,10 @@
     transition: width .15s linear 0s, height .15s linear 0s, border .175s linear .125s;
     z-index: 3;
 
+}
+
+@media (min-width: 700px) {
+    #sidebar-button.show {
+        margin-left: 40px;
+    }
 }

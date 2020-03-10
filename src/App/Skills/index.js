@@ -38,10 +38,10 @@ function Skills() {
                 <div id="other-skills-container">
                     <span>Audio Visual Technician</span>
                     <span>Spreadsheet Modeling and Programming</span>
-                    <span>Leadership</span>
+                    <span>Public Speaking</span>
                     <span>Management</span>
                     <span>Powerpoint and Keynote</span>
-                    <span>Microsfot Suite</span>
+                    <span>Microsoft Office Suite</span>
                 </div>
             </div>
         </section>

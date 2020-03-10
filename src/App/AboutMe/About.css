@@ -2,6 +2,31 @@
 
 #about-me {
     background-color: #8ec5d6;
+    min-height: 600px;
+}
+
+#about-container>p{
+    font-size: 1.3em;
+}
+
+#about-container>img {
+    float: right;
+    margin: 30px;
+}
+
+#byte {
+    font-family: 'Righteous', cursive;
+    color: #ff0073
+}
+
+#shh-a-secret {
+    font-family: 'Righteous', cursive;
+    color: #ff0073;
+    text-decoration: none;
+}
+
+#shh-a-secret:hover {
+    cursor: text
 }
 
 .profile-picture {

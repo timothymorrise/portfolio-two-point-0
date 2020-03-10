@@ -9,12 +9,14 @@ export default class Button extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            isButtonShrunk: false
+            isButtonShrunk: true
         }
         this.handleMouseEnter = this.handleMouseEnter.bind(this)
         this.menuChange = this.menuChange.bind(this)
         this.handleClick = this.handleClick.bind(this)
     }
+
+
 
     menuChange() {
         const { isMenuActive,
@@ -36,8 +38,7 @@ export default class Button extends Component {
     render() {
         let visibility = "show";
         let menuText= "MENU"
-        let position = this.props.position
-        console.log(position)
+        let position = this.props.position || 0
         if (this.props.isMenuActive || position<.11) {
             visibility = "hide";
             menuText = ""

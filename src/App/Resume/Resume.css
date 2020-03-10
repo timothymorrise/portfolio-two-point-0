@@ -13,9 +13,26 @@
     flex-direction: row;
 }
 
+#education-title {
+    margin-top: 30px;
+}
+
 .job {
     margin: 15px;
     margin-left: 20px;
+}
+
+.job>h3 {
+    font-size: 1.7em;
+}
+
+.job>span {
+    font-size: 1.2em;
+}
+
+li {
+    color: #cfcfcf;
+    font-size: 1.1em;
 }
 
 #resume {

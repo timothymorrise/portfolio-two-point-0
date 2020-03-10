@@ -14,17 +14,17 @@ function Resume() {
                 <h1 className="section-title">Resume</h1>
                 <div id="resume-content-container">
                     <div id="resume-downloads">
-                        <a href="">Download PDF</a>
+                        <a href="https://docs.google.com/document/d/1U1pJLcpglA8lq-vBgGO4RHqe-kLQApg621FKIsxrwwE/edit?usp=sharing" >Download PDF</a>
                         <span id="lil-line"> | </span>
-                        <a href="">Download "flat" version</a>
+                        <a href="https://docs.google.com/document/d/1mWb58CkCiI_TZkUVTw4C1Uycmbvv1Kf9Jft3xzLeWxw/edit?usp=sharing" >Download "flat" version</a>
                     </div>
                     <h2>Experience</h2>
                     <div className="job">
                         <h3>Salt Lake Film Society</h3><span>Salt Lake City, UT — Front of House Staff / Development Assistant</span>
                         <h4>MAY 2015 - PRESENT</h4>
                         <ul>
-                            <li>Worked on contract committee of people to coauthor Collective Bargaining Agreement to provide wage parity and industry standard practices to Front of House Staff</li>
-                            <li>Trained and managed team of 15+ Front of House staff on Union Procedures and Practices, and team of 10+  volunteers on donor management in company database</li>
+                            <li>Trained team of 15+ Front of House staff on Union Procedures and Practices, and trained and managed team of 10+ volunteers on donor management in company database</li>
+                            <li>CoAuthored Collective Bargaining Agreement while working on contract committee of 8 people to provide wage parity and industry standard practices to Front of House Staff</li>
                             <li>Saved the nonprofit $1000, initialized a retention program to track inventory</li>
                             <li>Managed regular high pressure customer loads of up to a rate of 1500/hour</li>
                         </ul></div>
@@ -38,7 +38,7 @@ function Resume() {
                             <li>Quality Checked a variety of high volume websites organized in a task manager</li>
                         </ul>
                     </div>
-                    <h2>Education and Certifications</h2>
+                    <h2 id="education-title">Education and Certifications</h2>
                     <div className="education-item">
                         <h3> Full Stack Web Development</h3>
                         <span id="lil-line"> | </span>
